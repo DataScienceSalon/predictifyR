@@ -1,0 +1,60 @@
+Package: predictifyR
+Type: Package
+Title: Word Prediction: An Evaluation of Statistical, Lexical, Syntactic, and Semantic Language Models
+Version: 0.1.0
+Authors@: person("John", "James", email = "j2sdatalab@gmail.com",
+                  role = c("aut", "cre"))
+Maintainer: John James <jjames@datasciencesalon.org>
+Description: An experimental study of language models, corpus design
+    and word prediction efficacy in four phases. The initial phase was
+    an exploratory data analysis of the English language HC Corpus, 
+    a collection of freely available texts comprised of over 2.5 billion 
+    words from 67 languages. Next, linquistically representative 
+    corpora of various  sizes were built and training, validation,
+    and test sets were preprocesed for modeling. The subsequent language
+    modeling phase concerned the implementation of Good-Turing / Katz,
+    Kneser Ney, Modified Kneser-Ney and Semantic language models.
+    Finally, the language models were executed on corpora of various sizes
+    and word prediction perplexity measures were taken to evaluate
+    word prediction accuracy.
+License: MIT
+Encoding: UTF-8
+LazyData: true
+Depends:
+    R (>= 3.4.1),
+    data.table,
+	  futile.logger
+RoxygenNote: 6.0.1
+Imports:
+  assertive.base,
+  assertive.code,
+  assertive.data,
+  assertive.files,
+  assertive.numbers,
+  assertive.properties,
+  assertive.strings,
+  assertive.types,
+  dplyr,
+	doParallel,
+	fastmatch,
+	ggplot2,
+	ggthemes,
+	gridExtra,
+	kfigr,
+	knitr,
+	languageR,
+	NLP,
+	openNLP,
+	parallel,
+	pbapply,
+	quanteda,
+	RCurl,
+	reshape2,
+	stats,
+	stringr,
+	tools,
+	wordcloud,
+	zipfR
+Suggests: knitr,
+    rmarkdown
+VignetteBuilder: knitr
